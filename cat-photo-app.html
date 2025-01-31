@@ -75,8 +75,20 @@
             <!--You can use the placeholder element to give people a hint about what 
             kind of information to enter into an input.-->
             <!--Use the required attribute to prevent the user from submitting a form when required information is missing-->
+            <!--You can use radio buttons for questions where you want only one answer out of multiple options-->
+            <!--You can use a label element to help associate the text for an input element with the input element itself-->
+            <!--You can use the id attribute to identify specific HTML elements. Each id attribute's value must be 
+            unique from all other id values for the entire page-->
+            <!--You can use the fieldset element to group related inputs and labels together in a web form-->
+            <fieldset>
+                <!--You can use the legend element to "caption" for the content in the fieldset element. It gives users context 
+                about what they should enter into that part of the form-->
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+                <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+            </fieldset>
             <input required "text" name="cat photo URL" placeholder="cat photo URL">
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </section>
 
     </body>
